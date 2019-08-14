@@ -55,22 +55,22 @@
 9. Merge gdp_df and continents. Keep only the countries that appear in both data frames. Save the result back to gdp_df. 
 
 10. Continent is currently stored as an "object" type. Since there are only five possible values for continent, we can convert it to categorical to save some memory usage. Do the following: 
-    * Use .info() on gdp_df. Note the memory usage. 
+    * Use `.info()` on gdp_df. Note the memory usage. 
     * By chaning type to categorical, we can not only save on memory usage, but can save on CPU time. To see this, we will use the `%%time` cell magic. In a new cell, run the following commands:  
     `%%time`    
     `gdp_df.groupby('Continent').GDP_Per_Capita.mean()`  
     This will return the average GDP_Per_Capita by continent, across all years and will measure how long it took to run.
     * Change the type of the Continent column to 'category'. 
-    * Run .info() again and note the drop in memory usage.
+    * Run `.info()` again and note the drop in memory usage.
     * Redo the aggregation about and note how the amount of CPU time dropped.
 
 11. Determine the number of countries per continent. Create a bar chart showing this.
 
 12. How many countries are represented in this dataset? What range of years are represented?
 
-13. Create a new dataframe by subsetting gdp\_df to just the year 2014. Call this new dataframe `gdp_2014`.
+13. Create a new dataframe by subsetting `gdp_df` to just the year 2014. Call this new dataframe `gdp_2014`.
 
-14. Use .describe() to find the summary statistics for GDP per capita in 2014. 
+14. Use `.describe()` to find the summary statistics for GDP per capita in 2014. 
 
 15. Which country had the highest GDP per capita in 2014? Which had the lowest? Find the top 5 counties by GDP per capita in 2014.
 
@@ -82,7 +82,7 @@
 
 18. Creat a seaborn boxplot showing GDP per capita in 2014 split out by continent. What do you notice?
 
-19. Pivot the data (using the pandas .pivot() method) so that we can calculate % change in GDP Per Capita from 1990 to 2017 - drop any countries that are missing GDP numbers for at least one of these two years.
+19. Pivot the data (using the pandas `.pivot()` method) so that we can calculate % change in GDP Per Capita from 1990 to 2017 - drop any countries that are missing GDP numbers for at least one of these two years.
 
 20. What percentage of countries or areas experienced a positive % change in GDP per capita? What percentage experienced a negative % change?
 
@@ -92,7 +92,7 @@
 
 <!-- 23. Do the same for the country with the lowest % change in GDP. -->
 
-24. Read in internet_use.csv into a DataFrame called `internet_df`. You will most likely get an error message when doing this - figure out what is going wrong and fix it. Take a look at the first and last five rows and make any corrections to your read_csv() call to fix this. Again, **do not** modify the original datasets. 
+24. Read in internet_use.csv into a DataFrame called `internet_df`. You will most likely get an error message when doing this - figure out what is going wrong and fix it. Take a look at the first and last five rows and make any corrections to your `read_csv()` call to fix this. Again, **do not** modify the original datasets. 
 
 25. How many rows and columns does this new dataset have? What are the types of its columns?
 
@@ -100,11 +100,11 @@
 
 27.	Merge the two DataFrames to one. Keep only countries and years that appear in both tables. Call the new DataFrame `gdp_and_internet_use`.
 
-28.	Look at the first five rows of your new data frame to confirm it merged correctly.Also, look at the last five rows to make sure the data is clean and as expected.
+28.	Look at the first five rows of your new data frame to confirm it merged correctly. Also, check the last five rows to make sure the data is clean and as expected.
 
 29. What is the mean internet users percentage in 2014? How many countries have at least 90% internet users in 2014?
 
-30. Find the countries that had the top 5 largest GDP per capita figures for 2014. Create a seaborn FacetGrid showing the change in internet user percentage for these five countries. What trends do you notice?
+30. Find the countries that had the top 5 largest GDP per capita figures for 2014. Create a seaborn FacetGrid showing the change in internet user percentage over time for these five countries. What trends do you notice?
 
 31. Create a scatter plot of Internet Use vs GDP per Capita for the year 2014.
 
