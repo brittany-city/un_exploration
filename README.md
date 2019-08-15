@@ -3,7 +3,7 @@
 ### Guided Practice:
 <!-- 1. Create a folder called `data` in your local `Data Question 1` repository.
 -->
-2.	Download two CSV files and place them in the `data` folder of your local Data Question 1 repository:
+1.	Download two CSV files and place them in the `data` folder of your local Data Question 1 repository:
     
     a.	Gross Domestic Product (GDP) per capita: http://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3aNY.GDP.PCAP.PP.KD  
     **DO NOT APPLY ANY FILTERS**
@@ -46,7 +46,7 @@
 
 8. Drop the 'Value Footnotes' column, and rename the remaining columns to ‘Country’, ‘Year’, and ‘GDP_Per_Capita’.
 
-9. Read in continents.csv into a new dataframe called `continents`. We will be using this dataframe to add a new column to our dataset. However, we must first do a little preparation of the country names in `gdp_df` so that we can merge the two correctly:
+9. Read in continents.csv contained in the `data` folder into a new dataframe called `continents`. We will be using this dataframe to add a new column to our dataset. However, we must first do a little preparation of the country names in `gdp_df` so that we can merge the two correctly:
 * Change "CÃ´te d'Ivoire" to "Ivory Coast"
 * Change "CuraÃ§ao" to "Curaçao"
 * Change "SÃ£o TomÃ© and Principe" to "Sao Tome and Principe"
