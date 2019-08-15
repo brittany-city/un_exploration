@@ -1,19 +1,19 @@
 ## **Data Question 1: An Exploration of UN data**
 
 ### Guided Practice:
-1. Create a folder called `data` in your local `Data Question 1` repository.
-
-2.	Download two CSV files and place them in this folder:
+<!-- 1. Create a folder called `data` in your local `Data Question 1` repository.
+-->
+2.	Download two CSV files and place them in the `data` folder of your local Data Question 1 repository:
     
     a.	Gross Domestic Product (GDP) per capita: http://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3aNY.GDP.PCAP.PP.KD  
     **DO NOT APPLY ANY FILTERS**
      - rename the file to gdp_per_capita.csv
-     - open it with a text editor (not excel) and take a look
+     - open it with a text editor (not Excel) and take a look
     
     b.	Percentage of Individuals using the Internet: http://data.un.org/Data.aspx?d=ITU&f=ind1Code%3aI99H  
     **DO NOT APPLY ANY FILTERS**
     - rename the file to internet_use.csv
-    - open it with a text editor (not excel) and take a look
+    - open it with a text editor (not Excel) and take a look
 
 3. Create a Jupyter Notebook and name it `UN_Data_Exploration`.
  - _*You are likely to get errors along the way. When you do, read the errors to try to understand what is happening and how to correct it.*_
