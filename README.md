@@ -1,8 +1,6 @@
 ## **Data Question 1: An Exploration of UN data**
 
 ### Guided Practice:
-<!-- 1. Create a folder called `data` in your local `Data Question 1` repository.
--->
 1.	Download two CSV files and place them in the `data` folder of your local Data Question 1 repository:
     
     a.	Gross Domestic Product (GDP) per capita: http://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3aNY.GDP.PCAP.PP.KD  
@@ -90,8 +88,6 @@
 
 22. Create another showing the country with the second highest % change in GDP. How do the trends in these countries compare?
 
-<!-- 23. Do the same for the country with the lowest % change in GDP. -->
-
 24. Read in internet_use.csv into a DataFrame called `internet_df`. You will most likely get an error message when doing this - figure out what is going wrong and fix it. Take a look at the first and last five rows and make any corrections to your `read_csv()` call to fix this. Again, **do not** modify the original datasets. 
 
 25. How many rows and columns does this new dataset have? What are the types of its columns?
@@ -116,46 +112,6 @@
 
 35. Filter the original dataset down to just the United States for all available years. Calculate correlation between internet use and gdp per capita. Is this meaningful or useful?
 
-
-
-<!--
-16.	Subset the combined data frame to keep only the data for 2004, 2009, and 2014. Check that this happened correctly.
-17.	Create three new data frames, one for 2004, one for 2009, and one for 2014. Give them meaningful names that aren't too long.
-18.	Which country had the highest percent of internet users in 2014? What was the percentage? (Try typing the first 3 letters of your DataFrame name and hitting the tab for auto-complete options).
-19.	Which country had the lowest percent of internet users in 2014? What was the percentage?
-20.	Repeat for 2004 and 2009.
-21.	Which country had the highest gdp per capita in 2014? What was the gdp per capita?
-22.	Which country had the lowest gdp per capita in 2014? What was the gdp per capita?
-23.	Create some scatterplots:  
-    a.  2004 Percent Using the Internet vs gdp per capita  
-    b.	 2009 Percent Using the Internet vs gdp per capita  
-    c.	 2014 Percent Using the Internet vs gdp per capita  
-24.	Are there differences across years? What do the plots tell you about any relationship between these two variables? Enter your observations as a markdown cell.
-25.	Look at the distribution of gdp per capita values for 2014. Is it unimodal?
-26.	Look at the distribution of Internet Use for 2014. Is it unimodal?
-27.	What are the top 5 countries in terms of internet use in 2014?
-28.	Create a data frame called top_5_internet from the combined data frame that has all three years for these 5 countries. You should have 15 rows. Check that this is true.
-29.	Create a seaborn FacetGrid to show the internet usage trend over time for these 5 countries. Which country had the greatest growth between 2004 andd 2014? If you have time, try to figure out how to fix the plotting issue with Bermuda.
-30.	Repeat the steps above to look at the trend for 5 countries with the lowest 2014 internet usage. WHich country has consistently had the least internet use?
-31.	Get the top 5 countries for 2014 in terms of GDP per capita; create a dataframe to look at 10-year trends in gdp per capita. Use a seaborn facet grid for this.
-32. Repeat this one more time to look at 10-year trend for the bottom 5 countries for 2014 in terms of GDP per capita.
-33.	Is there anything surprising or unusual in any of these plots? Searching on the internet, can you find any possible explanations for unusual findings?
-
-
-### In class practice 2:
-1.	Import stats from scipy:
-
-     `from scipy import stats`
-
-2.	Print the docstring for stats:
-
-     `print(stats.__doc__)`
-
-    Try shift + tab + tab to see the documentation too!
-
-3.	Create a set of 500 randomly generated numbers called iq_scores with a mean = 100 and standard deviation = 15.
-4.	Using the example at the bottom of this webpage as a guide (https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.random.normal.html), plot the distribution of your iq_scores.  Does it look normally distributed?
-5. Create a boxplot of these iq_scores -->
 
 ### Solo Exploration and Presentation:
 1. Choose and download another data set from the UN data (http://data.un.org/Explorer.aspx) to merge with your data and explore.
